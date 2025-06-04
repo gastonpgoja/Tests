@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon ASIN Data Injector",
+  "description": "Inject custom data into Amazon listings from a sheet.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.com/*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://docs.google.com/*",
+    "https://*.sharepoint.com/*"
+  ]
+}
